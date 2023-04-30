@@ -15,9 +15,9 @@ void shell_sort(int *array, size_t size)
 
 		while (gap <= (size / 3))
 		{
-			gap = gap * 3 + 1;
+			gap = gap * 3 + 1; /*Max value of the gap*/
 		}
-		for (; gap >= 1; gap /= 3)
+		for (; gap >= 1; gap /= 3) /*Decreases gap from max value to 1*/
 		{
 			for (n = gap; n < size; i++)
 			{
